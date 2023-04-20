@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  scratchpay:
+    image: scratchpay
+    build:
+      context: .
+      args:
+        APP_PORT: ${APP_PORT}
+    env_file:
+      - ./.env
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+    volumes:
+      - /usr/src/app/node_modules
+      - .:/usr/src/app
+    command: npm start
+
+

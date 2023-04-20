@@ -1,0 +1,7 @@
+{
+    // Allow linting code on save
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "eslint.validate": ["javascript"]
+}

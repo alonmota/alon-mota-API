@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  scratchpay:
+    container_name: scratchpay-dev
+    command: npm run debug
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 9229:9229
