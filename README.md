@@ -57,20 +57,20 @@ or using docker
 npm run docker:prod
 ```
 
-Linting, in vscode code should auto lint on saving files, to manually lint files
+Linting, vscode code should auto lint on saving files, to manually lint files
 
 ```bash
 # run ESLint
-yarn lint
+npm run lint
 
 # fix ESLint errors
-yarn lint:fix
+npm lint:fix
 
 # run prettier
-yarn prettier
+npm prettier
 
 # fix prettier errors
-yarn prettier:fix
+npm prettier:fix
 ```
 
 ## Test
