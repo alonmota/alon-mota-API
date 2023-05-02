@@ -26,14 +26,14 @@ app.use(compression());
 app.use(cors());
 app.options('*', cors());
 
+// Mount doc route with swagger ui
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swagger));
+
 // Set default request params
 app.use(expressConfig);
 
 // Mount routes defined in *.route.js files
 app.use('/api', routes);
-
-// Mount doc route with swagger ui
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swagger));
 
 // send back a 404 error for any unknown api request
 app.use((req, res, next) => next(new ResourceNotFound()));
