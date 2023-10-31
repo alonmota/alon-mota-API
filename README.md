@@ -1,13 +1,5 @@
-# scratchpay_challenge
-Project developed as a challenge for scratchpay, the goal is to call some endpoints containing a list of clinics and perform some actions on the result.
-## Assumptions
-ASSUMPTION: There was no reliable way to determine duplicate clinics amongst results from different providers. For example "Scratchpay Test Pet Medical Center" which was returned by both providers might actually be from different clinics, since one is a vet and other is a dental.
-So in order to avoid missing results, ALL CLINICS RETURNED FROM DIFFERENT PROVIDERS WERE CONSIDERED TO BE DIFFERENT.
-With more information on which providers should be considered for duplicate names, and information on actual duplicates we could prevent returning duplicate clinics.
-
-ASSUMPTION: Results should be collected even if one of the providers is down. Considering results only for active providers
-
-ASSUMPTION: We were not allowed to create a database, therefore saving results and storing them on proper index systems was not considered
+# Sample API
+Sample API to manage clinics
 
 ## Features
 - Commit lint is enforced by husky, using Conventional Commits, se [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for more information
